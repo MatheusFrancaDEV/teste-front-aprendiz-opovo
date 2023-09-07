@@ -42,11 +42,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: var(---yellow-1);
 }
 .movie{
     display: flex;
     margin-top: 100px;
+    padding: 1rem;
 }
 .descri-movie{
     display: flex;
@@ -82,9 +84,165 @@
 .grid-infos.left{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 .grid-infos.right{
     display: flex;
     flex-direction: column;
+}
+.container-carrosel{
+    background-color: var(---yellow-2);
+    width: 100%;
+    height: 394px;
+    padding: .8rem;
+}
+.carrosel{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+    overflow: auto;
+    gap: 1.5rem;
+}
+.carrosel::-webkit-scrollbar{
+    display: none;
+}
+.actor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    color: var(---black);
+    text-align: center;
+}
+.title-actors{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 865px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: .8rem;
+}
+.title-actors h1{
+    font-size: 2rem;
+    color: var(---brown);
+}
+.title-actors a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(---yellow-2);
+    background-color: var(---brown);
+    padding: .9rem;
+    width: 125px;
+    border-radius: 20px;
+}
+.container-resenha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 73px;
+    margin-bottom: 70px;
+    padding: 1rem;
+}
+.resenhas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+.resenha{
+    display: flex;
+    flex-direction: column;
+    background-color: var(---yellow-2);
+    width: 100%;
+    max-width: 610px;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 24px;
+    gap: 30px;
+    color: var(---black);
+}
+.resenha p{
+    max-width: 550px;
+}
+.title-resenhas{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.3rem;
+}
+.title-resenhas h1{
+    color: var(---brown);
+}
+.title-resenhas a{
+    text-decoration: none;
+    color: var(---yellow-2);
+    font-size: 24px;
+    padding: .7rem;
+    border-radius: 20px;
+    background-color: var(---brown);
+}
+.more{
+    display: flex;
+    justify-content: space-between;
+}
+.writer strong,
+.more strong{
+    color: var(---brown);
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(---brown);
+    color: var(---yellow-2);
+    padding: 2rem;
+}
+#options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: auto;
+    list-style: none;
+    gap: 1.875rem;
+    font-size: 24px;
+}
+@media(max-width:768px){
+    #menu{
+        display: none;
+    }
+    .movie{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .grid-infos{
+        display: flex;
+        flex-direction: column;
+    }
+    #banner{
+        width: 350px;
+    }
+    .carrosel{
+        max-width: 400px;
+    }
+    .resenhas{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        gap: .8rem;
+    }
+    #options{
+        display: flex;
+        flex-direction: column;
+    }
 }
