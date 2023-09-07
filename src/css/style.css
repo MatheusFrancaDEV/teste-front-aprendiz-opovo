@@ -10,3 +10,10 @@
     ---gradient: #DFD7BF00;
     ---shadow: #102C5733;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(---font-principal);
+}
