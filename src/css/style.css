@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    ---font-principal: 'League Spartan', sans-serif;
+    ---black: #333333;
+    ---brown: #3F2305;
+    ---yellow-1: #F2EAD3;
+    ---yellow-2: #DFD7BF;
+    ---yellow-3: #A4907C;
+    ---gradient: #DFD7BF00;
+    ---shadow: #102C5733;
+}
