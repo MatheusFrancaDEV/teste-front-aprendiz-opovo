@@ -17,3 +17,74 @@
     box-sizing: border-box;
     font-family: var(---font-principal);
 }
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(---brown);
+    height: 6.25rem;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(---yellow-1);
+}
+#menu a:hover{
+    color: var(---yellow-3);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(---yellow-1);
+}
+.movie{
+    display: flex;
+    margin-top: 100px;
+}
+.descri-movie{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 1.5rem;
+}
+.descri-movie h3{
+    color: var(---brown);
+}
+.descri-movie span{
+    color: var(---black);
+}
+.top-descri h1{
+    color: var(---brown);
+    font-size: 3rem;
+}
+.top-descri span{
+    color: var(---yellow-3);
+    font-weight: lighter;
+}
+.down-descri{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 820px;
+    gap: 10px;
+}
+.grid-infos{
+    display: flex;
+    gap: 10px;
+}
+.grid-infos.left{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.grid-infos.right{
+    display: flex;
+    flex-direction: column;
+}
