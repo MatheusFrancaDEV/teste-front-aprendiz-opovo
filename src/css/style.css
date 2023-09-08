@@ -97,7 +97,7 @@
     height: 394px;
     padding: .8rem;
 }
-.carrosel{
+.slides{
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -105,16 +105,35 @@
     overflow: auto;
     gap: 1.5rem;
 }
-.carrosel::-webkit-scrollbar{
+.slide{
+    transition: .3s;
+}
+.slider input{
     display: none;
 }
-.actor{
+#radio:checked ~ .first{
+    margin-left: -10%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.slides::-webkit-scrollbar{
+    display: none;
+}
+.slide-images{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .8rem;
     color: var(---black);
     text-align: center;
+    transition: .2s;
 }
 .title-actors{
     display: flex;
